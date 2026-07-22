@@ -1,0 +1,21 @@
+{
+  "token": "Ter6P1hdayfb5rIHt4ixS3YLBtf0eBC7Yk2xN1EI8Kz4Ckkt4Z",
+  "readwiseDir": "Readwise",
+  "frequency": "0",
+  "triggerOnLoad": true,
+  "isSyncing": false,
+  "lastSyncFailed": false,
+  "lastSavedStatusID": 25777831,
+  "currentSyncStatusID": 0,
+  "refreshBooks": false,
+  "booksToRefresh": [],
+  "failedBooks": [],
+  "booksIDsMap": {
+    "Readwise/Books/Building a Second Brain.md": "60069888",
+    "Readwise/Books/AI-Powered Leadership.md": "60069889",
+    "Readwise/Books/The Bullseye Principle.md": "60115417",
+    "Readwise/Books/The Psychology of Money.md": "60251692",
+    "Readwise/Books/No More Mr. Nice Guy!.md": "60296738"
+  },
+  "reimportShowConfirmation": true
+}

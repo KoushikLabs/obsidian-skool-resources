@@ -1,0 +1,24 @@
+{
+  "creator_slug": "jp-middleton",
+  "creator_name": "JP Middleton",
+  "skool_url": "https://www.skool.com/ai-agency-secrets-3713/about",
+  "community_slug": "ai-agency-secrets-3713",
+  "classroom_url": "https://www.skool.com/ai-agency-secrets-3713/classroom",
+  "raw_dir": "H:\\Obsidian\\Skool Resources\\creators\\jp-middleton\\raw",
+  "manifest_path": "H:\\Obsidian\\Skool Resources\\creators\\jp-middleton\\resource_manifest.csv",
+  "steps": [
+    "Chrome MCP: find an existing tab on skool.com (this community). If none is open, ask the user to open and join the community first.",
+    "Navigate to ai-agency-secrets-3713/classroom.",
+    "For each course tile: click in, enumerate sections and lessons.",
+    "For each lesson page: capture the title, video URL (if any), and external links in the description / attachments panel. Pay special attention to drive.google.com, github.com, dropbox.com, gumroad.com, and raw file URLs (.pdf, .json, .csv, .xlsx).",
+    "For Google Drive folder URLs: use the embeddedfolderview trick (existing pattern in extract_all.py) to list contents without login.",
+    "For direct file URLs: download to raw/{resource-slug}/{filename}.",
+    "Append a row per resource to resource_manifest.csv with columns: course, lesson, resource_title, original_url, local_path, kind.",
+    "When done: re-run build_wiki.py and report what was added."
+  ],
+  "caveats": [
+    "If the community requires payment, skip and mark as 'paid' in the manifest.",
+    "Skool lesson attachments sometimes render inside iframes; Chrome MCP may need to evaluate the DOM rather than follow anchor hrefs.",
+    "Respect Skool's terms; scrape only content you can already see as a joined member."
+  ]
+}
